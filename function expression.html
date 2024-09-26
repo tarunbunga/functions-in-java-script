@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+    }
+</style>
+<body>
+    <h1>function expression</h1>
+    <hr>
+    <h3>function expression without parameters and without return</h3>
+    <script type="text/javascript">
+        var wish=function(){
+            document.write("hello","<br/>");
+        }
+        wish();
+    </script>
+    <hr>
+    <h3>function expression with parameters and with return</h3>
+    <script>
+        var add=function(num1,num2){
+            return num1+num2;
+        }
+        document.write(add(55,55),"<br/>");
+    </script>
+     <hr>
+     <h3>function expression with parameters and without return</h3>
+     <script>
+         var add=function(wish){
+            document.write(wish,"<br/>");
+         }
+        add("hello");
+        add("TARUN");
+        add("How Are You");
+     </script>
+     <hr>
+     <h3>function expression with parameters and without return</h3>
+     <script>
+         var add=function(wish){
+           return "Hai Tarun";
+         }
+         var returnvalue=add();
+         document.write(returnvalue);
+     
+     </script>
+</body>
+</html>

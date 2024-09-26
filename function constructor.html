@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>function constructor</h1>
+    <hr>
+    <h3>functions with out parameters and without return</h3>
+    <script type="text/javascript">
+        var tarun = new Function("{document.write('Hai','<br/>')}");
+        tarun();
+    </script><hr>
+    <h3>functions with out parameters and with return</h3>
+    <script>
+        var tarun= new Function("num1","num2","{return num1+num2;}");
+        document.write(tarun(22,3));
+   </script>
+</body>
+</html>
